@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap-4/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <!--  HEADER SECTION  -->
-    <header>
-        <img src="assets/IMG_0066.jpg" alt="Logo" id="logo">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme|Caveat" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <!--  HEADER SECTION  -->
+  <header>
+
     <!-- Navbar  -->
-    
-        <nav>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Locations</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-            </ul>
-          </div>    
-        </nav>
-    </header>
-    
-    
-    
-    
-    
-    
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="bootstrap-4/js/bootstrap.min.js"></script>
-  </body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+                <img src="assets/IMG_0066.jpg" width="100" height="40" alt="Logo">
+            </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item" href="#">About</a>
+          <a class="nav-item" href="#">Cater</a>
+          <a class="nav-item" href="#">Locations</a>
+          <a class="nav-item" href="#">Shop</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section id="hero" class="container-fluid">
+    <div class="button">
+      <a class="btn btn-lg btn-hero" href="#" role="button">Menu</a>
+    </div>
+  </section>
+  <!--Hours Bar  -->
+  <section id="info-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <p class="right">Hours:<span class="hours">Mon-Fri 8-5</span></p>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <p class="left">Sat 10-12 <span class="hours">Sun Closed</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Body Panels  -->
+  <section id="body-panels">
+   <ul>
+    <li class="box">
+      <div class="overlay yellow">
+          <h1>LOCAL</h1>
+      </div>
+    </li>
+    <div class="panel">
+      <h2>About Us</h2>
+      <img src="assets/test.jpg" alt="Profile Image" width="250px" height="250px">
+      <p class="local">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magni debitis assumenda eligendi nobis magnam ratione, provident expedita molestias. Voluptas rerum consequatur aliquid nostrum voluptatem. Sapiente ullam minus ad quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt soluta recusandae eos accusantium iusto sint, laboriosam blanditiis, magni doloribus perspiciatis non deleniti natus veritatis labore molestiae ex sunt! Deleniti, quam.</p>
+      <p class="local">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magni debitis assumenda eligendi nobis magnam ratione, provident expedita molestias. Voluptas rerum consequatur aliquid nostrum voluptatem. Sapiente ullam minus ad quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt soluta recusandae eos accusantium iusto sint, laboriosam blanditiis, magni doloribus perspiciatis non deleniti natus veritatis labore molestiae ex sunt! Deleniti, quam.</p>
+    </div>
+    <li class="box">
+      <div class="overlay tan">
+          <h1>MENU</h1>
+      </div>
+    </li>
+    <div class="panel">
+      <h2>Menu</h2>
+      <img src="assets/test.jpg" alt="Profile Image" width="250px" height="250px">
+      <p>Infinite BBQ has everything your barbeque tastebuds desire. We have a selection of BBQ favorites like brisket and pulled pork and smoked sausage. Get a plate or try a sandwich. TRy a family pack and feed the whole family or come by and grab soem meats by the pound. Don't forget one of our amazing home-made desserts to finish off your experience. Click the button below to check out our full menu!</p>
+      <a class="btn btn-lg btn-hero" href="#" role="button">Menu</a>
+    </div>
+    <li class="box">
+      <div class="overlay green">
+          <h1>CATERING</h1>
+      </div>
+    </li>
+    <div class="panel">
+      <h2>Catering</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quisquam et praesentium totam eveniet reiciendis sunt veniam, ipsum animi pariatur voluptates alias velit! Sunt, vero. Voluptate, veniam debitis consequatur labore.</p>
+    </div>
+    <li class="box">
+      <div class="overlay orange">
+          <h1>SHOP</h1>
+      </div>
+    </li>
+    <div class="panel">
+      <h2>Shop</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut expedita excepturi aspernatur, incidunt dolorem veniam laborum, aliquid nam mollitia est non cupiditate nesciunt velit perspiciatis? Placeat molestiae doloremque, ipsam.</p>
+    </div>
+  </ul>
+
+  </section>
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="bootstrap-4/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
