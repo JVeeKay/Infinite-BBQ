@@ -2,7 +2,7 @@
 
 nav
     background-image: url("../assets/thumbnail_MARINADE.jpg")
-    opacity: 0.9
+    //opacity: 0.9
     height: auto
 
     .nav-item
@@ -13,7 +13,11 @@ nav
         text-transform: uppercase
         font-family: $font-stack-primary
         font-size: 24px
+        &:hover
+            color: $button-color
 
+    .active
+        color: $button-color
     .navbar-toggler
         background: $text-almond
 
@@ -21,4 +25,4 @@ nav
         background-color: $text-almond
 
 nav.navbar
-    padding: 3rem 1rem
+    padding: 2rem 1.5rem

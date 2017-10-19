@@ -1,106 +1,163 @@
+html {
+  padding: 0;
+  margin: 0; }
+
 body {
   margin: 0;
-  padding: 0; }
+  padding: 113px 0 0;
+  background-color: black; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "BioRhyme", serif; }
 
 p {
   font-family: "Caveat", cursive;
   font-size: 24px; }
 
+footer {
+  background-image: url("../assets/thumbnail_MARINADE.jpg");
+  height: 250px;
+  border-top: 15px solid #FF652F; }
+  footer h1 {
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px #FAFAF4; }
+  footer a {
+    display: block;
+    padding-top: 20px;
+    font-size: 24px;
+    color: white; }
+
 header .logo {
-  width: 150px; }
+  width: 200px; }
 
 /*Hero Section */
 #hero {
-  background-image: url("../assets/brisket.jpg");
-  background-size: cover;
-  height: 500px; }
-  #hero .button {
-    padding-top: 350px; }
+  padding: 0;
+  height: 550px; }
+
+.button {
+  position: relative;
+  bottom: 150px; }
+
+.item {
+  background-size: cover; }
 
 #info-bar {
-  background-color: #5F817A; }
+  background-color: #5F817A;
+  padding: 10px 0px; }
   #info-bar p {
     font-family: "BioRhyme", serif;
     font-size: 22px;
-    text-transform: uppercase;
-    text-shadow: 4px 2px 5px black;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
     color: #FAFAF4;
-    padding-top: 15px; }
-  #info-bar .right {
-    text-align: right; }
-  #info-bar .left {
-    text-align: left; }
-  #info-bar span.hours {
-    padding-left: 25px; }
-
-#body-panels ul {
-  padding: 0; }
-#body-panels .box {
-  width: 100%;
-  height: 175px;
-  list-style: none; }
-#body-panels .box:first-of-type {
-  background-image: url("../assets/test.jpg"); }
-#body-panels .box:nth-of-type(2) {
-  background-image: url("../assets/test.jpg"); }
-#body-panels .box:nth-of-type(3) {
-  background-image: url("../assets/test.jpg"); }
-#body-panels .box:last-of-type {
-  background-image: url("../assets/test.jpg"); }
-#body-panels .overlay.yellow {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 175px;
-  text-shadow: 4px 2px 5px black;
-  background-color: rgba(142, 127, 43, 0.5); }
-#body-panels .overlay.tan {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 175px;
-  text-shadow: 4px 2px 5px black;
-  background-color: rgba(142, 129, 117, 0.5); }
-#body-panels .overlay.green {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 175px;
-  text-shadow: 4px 2px 5px black;
-  background-color: rgba(95, 129, 122, 0.5); }
-#body-panels .overlay.orange {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 175px;
-  text-shadow: 4px 2px 5px black;
-  background-color: rgba(191, 68, 37, 0.5); }
-#body-panels h1 {
-  text-align: center;
-  font-size: 68px;
-  padding-top: 45px;
-  color: #FAFAF4;
-  letter-spacing: 0.1em;
-  margin-bottom: 0; }
-#body-panels .panel {
-  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.7);
-  display: none;
-  background-color: #FAFAF4;
-  padding: 50px 150px 60px; }
-  #body-panels .panel h2 {
-    color: #FF652F;
-    text-shadow: 1px 1px 2px #777; }
-  #body-panels .panel p {
-    color: #8e8175;
     margin-bottom: 0;
-    padding-top: 30px; }
-  #body-panels .panel img {
-    padding-top: 10px; }
-  #body-panels .panel a {
-    margin-top: 32px; }
+    letter-spacing: 0.03em; }
+  #info-bar .phone {
+    color: #FAFAF4;
+    text-shadow: 1px 1px 1px black;
+    font-size: 26px;
+    letter-spacing: 0.04em; }
+
+#body-panels {
+  background-color: #FAFAF4; }
+  #body-panels ul {
+    padding: 0;
+    margin-bottom: 0; }
+  #body-panels .box {
+    width: 100%;
+    height: 175px;
+    list-style: none; }
+  #body-panels .box:first-of-type {
+    background-image: url("../assets/test.jpg"); }
+  #body-panels .box:nth-of-type(2) {
+    background-image: url("../assets/test.jpg"); }
+  #body-panels .box:nth-of-type(3) {
+    background-image: url("../assets/test.jpg"); }
+  #body-panels .box:last-of-type {
+    background-image: url("../assets/test.jpg"); }
+  #body-panels .overlay.yellow {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 175px;
+    text-shadow: 4px 2px 5px black;
+    background-color: rgba(142, 127, 43, 0.5); }
+  #body-panels .overlay.tan {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 175px;
+    text-shadow: 4px 2px 5px black;
+    background-color: rgba(142, 129, 117, 0.5); }
+  #body-panels .overlay.orange {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 175px;
+    text-shadow: 4px 2px 5px black;
+    background-color: rgba(191, 68, 37, 0.5); }
+  #body-panels .overlay.green {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 175px;
+    text-shadow: 4px 2px 5px black;
+    background-color: rgba(95, 129, 122, 0.5); }
+  #body-panels h1 {
+    text-align: center;
+    font-size: 3.6rem;
+    padding-top: 50px;
+    color: #FAFAF4;
+    letter-spacing: 0.1em;
+    margin-bottom: 0; }
+    @media (min-width: 300px) and (max-width: 767px) {
+      #body-panels h1 {
+        font-size: 2.7rem; } }
+  #body-panels .panel {
+    box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.7);
+    display: none;
+    background-color: #FAFAF4;
+    padding: 7% 15% 10%; }
+    #body-panels .panel h2 {
+      color: #FF652F;
+      text-shadow: 1px 1px 2px #777; }
+    #body-panels .panel p {
+      color: #333;
+      margin-bottom: 0;
+      padding-top: 30px;
+      font-size: 26px; }
+    #body-panels .panel img {
+      padding-top: 10px;
+      max-width: 275px;
+      height: auto; }
+    #body-panels .panel a {
+      margin-top: 32px; }
+
+#locations {
+  background-color: #FAFAF4;
+  border-top: 15px solid #FF652F;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #FF652F; }
+  #locations h1 {
+    margin-top: 0;
+    padding: 40px 0 10px 0; }
+  #locations h3 {
+    padding-bottom: 20px; }
+  #locations h4 {
+    padding: 40px 0 50px 0;
+    margin-bottom: 0; }
+  #locations p {
+    color: #FAFAF4;
+    text-shadow: 1px 1px 2px #555; }
+  #locations .card {
+    margin-bottom: 10px;
+    width: 18rem; }
+  #locations .card-body {
+    background-color: #FF8055; }
 
 .btn-lg {
   background-color: #FF652F;
@@ -118,7 +175,6 @@ header .logo {
 /*Main Nav */
 nav {
   background-image: url("../assets/thumbnail_MARINADE.jpg");
-  opacity: 0.9;
   height: auto; }
   nav .nav-item {
     padding: 7px 20px;
@@ -127,12 +183,16 @@ nav {
     text-transform: uppercase;
     font-family: "BioRhyme", serif;
     font-size: 24px; }
+    nav .nav-item:hover {
+      color: #FF652F; }
+  nav .active {
+    color: #FF652F; }
   nav .navbar-toggler {
     background: #FAFAF4; }
   nav .navbar-toggler-icon {
     background-color: #FAFAF4; }
 
 nav.navbar {
-  padding: 3rem 1rem; }
+  padding: 2rem 1.5rem; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,38 +1,44 @@
 /*Hero Section*/
 
 #hero
-  background-image: url("../assets/brisket.jpg")
-  background-size: cover
-  height: 500px
+  padding: 0
+  height: 550px
 
-  .button
-    padding-top: 350px
+.button
+  position: relative
+  bottom: 150px
+.item
+  background-size: cover
+
 
 // Info-Bar Section
 
 #info-bar
   background-color: $brand-sage
-
+  padding: 10px 0px
   p
     font-family: $font-stack-primary
     font-size: 22px
-    text-transform: uppercase
-    text-shadow: 4px 2px 5px black
+    //text-transform: uppercase
+    text-align: center
+    text-shadow: 1px 1px 2px black
     color: $text-almond
+    margin-bottom: 0
+    letter-spacing: .03em
+  .phone
+    color: $text-almond
+    //padding-top: 5px
+    text-shadow: 1px 1px 1px black
+    font-size: 26px
+    letter-spacing: .04em
 
-    padding-top: 15px
-  .right
-    text-align: right
-  .left
-    text-align: left
-  span.hours
-    padding-left: 25px
-
-// Main Body Panels
+// Main Body Panels Section
 
 #body-panels
+  background-color: $text-almond
   ul
     padding: 0
+    margin-bottom: 0
   .box
     width: 100%
     height: 175px
@@ -64,6 +70,14 @@
     text-shadow: 4px 2px 5px black
     background-color: rgba(142,129,117,0.5)
 
+  .overlay.orange
+    position: relative
+    top: 0
+    width: 100%
+    height: 175px
+    text-shadow: 4px 2px 5px black
+    background-color: rgba(191,68,37,0.5)
+
   .overlay.green
     position: relative
     top: 0
@@ -72,20 +86,15 @@
     text-shadow: 4px 2px 5px black
     background-color: rgba(95,129,122,0.5)
 
-  .overlay.orange
-    position: relative
-    top: 0
-    width: 100%
-    height: 175px
-    text-shadow: 4px 2px 5px black
-    background-color: rgba(191,68,37,0.5)
   h1
     text-align: center
-    font-size: 68px
-    padding-top: 45px
+    font-size: 3.6rem
+    padding-top: 50px
     color: $text-almond
     letter-spacing: .1em
     margin-bottom: 0
+    @media (min-width: 300px) and (max-width: 767px)
+      font-size: 2.7rem
 
   //Body Panel Content
 
@@ -93,16 +102,48 @@
     box-shadow: inset 0 3px 7px rgba(#000, 0.7)
     display: none
     background-color: $text-almond
-    padding: 50px 150px 60px
+    padding: 7% 15% 10%
     h2
       color: #FF652F
       text-shadow: 1px 1px 2px #777
     p
-      color: #8e8175
+      color: #333
       margin-bottom: 0
       padding-top: 30px
-      
+      font-size: 26px
+
     img
       padding-top: 10px
+      max-width: 275px
+      height: auto
+
     a
       margin-top: 32px
+
+  //Locations Section
+
+#locations
+  background-color: $text-almond
+  border-top: 15px solid $button-color
+  text-align: center
+  margin: 0
+  padding: 0
+  color: $button-color
+  h1
+    margin-top: 0
+    padding: 40px 0 10px 0
+  h3
+    padding-bottom: 20px
+  h4
+    padding: 40px 0 50px 0
+    margin-bottom: 0
+  p
+    color: $text-almond
+    text-shadow: 1px 1px 2px #555
+
+
+  .card
+    margin-bottom: 10px
+    width: 18rem
+  .card-body
+    background-color: #FF8055
