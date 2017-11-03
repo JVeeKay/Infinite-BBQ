@@ -5,9 +5,9 @@ html {
 body {
   margin: 0;
   padding: 113px 0 0;
-  background-color: black; }
+  background-color: #222; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "BioRhyme", serif; }
 
 p {
@@ -16,20 +16,32 @@ p {
 
 footer {
   background-image: url("../assets/thumbnail_MARINADE.jpg");
-  height: 250px;
-  border-top: 15px solid #FF652F; }
-  footer h1 {
-    margin-top: 0;
-    text-align: center;
-    text-shadow: 2px 2px 4px #FAFAF4; }
+  height: auto;
+  border-top: 15px solid #FF652F;
+  padding-top: 30px; }
+  footer h3, footer h5, footer p, footer a {
+    color: #FAFAF4;
+    text-shadow: 2px 2px 2px black; }
+  footer p {
+    margin-bottom: 0; }
+  footer h5 {
+    text-align: center; }
   footer a {
-    display: block;
-    padding-top: 20px;
-    font-size: 24px;
-    color: white; }
+    text-decoration: none;
+    color: #FAFAF4;
+    font-size: 40px; }
+  footer .footer-top {
+    padding-bottom: 20px; }
+  footer .footer-bottom {
+    background-color: #222;
+    padding: 0; }
+  footer .copyright {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0; }
 
 header .logo {
-  width: 200px; }
+  width: 300px; }
 
 /*Hero Section */
 #hero {
@@ -193,6 +205,6 @@ nav {
     background-color: #FAFAF4; }
 
 nav.navbar {
-  padding: 2rem 1.5rem; }
+  padding: 15px; }
 
 /*# sourceMappingURL=app.css.map */
