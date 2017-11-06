@@ -7,7 +7,11 @@ body {
   padding: 113px 0 0;
   background-color: #222; }
 
-h1, h2, h3, h4, h5 {
+.bg-light {
+  background-color: #FAFAF4;
+  padding-top: 150px; }
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "BioRhyme", serif; }
 
 p {
@@ -17,7 +21,7 @@ p {
 footer {
   background-image: url("../assets/thumbnail_MARINADE.jpg");
   height: auto;
-  border-top: 15px solid #FF652F;
+  border-top: 10px solid #FF652F;
   padding-top: 30px; }
   footer h3, footer h5, footer p, footer a {
     color: #FAFAF4;
@@ -30,6 +34,8 @@ footer {
     text-decoration: none;
     color: #FAFAF4;
     font-size: 40px; }
+    footer a:hover {
+      color: #FF652F; }
   footer .footer-top {
     padding-bottom: 20px; }
   footer .footer-bottom {
@@ -149,7 +155,7 @@ header .logo {
 
 #locations {
   background-color: #FAFAF4;
-  border-top: 15px solid #FF652F;
+  border-top: 10px solid #FF652F;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -170,6 +176,35 @@ header .logo {
     width: 18rem; }
   #locations .card-body {
     background-color: #FF8055; }
+
+#menu-image {
+  padding: 0 20px; }
+  #menu-image img {
+    max-width: 100%;
+    height: auto;
+    padding: 80px 10px 50px; }
+  #menu-image h3 {
+    padding-top: 80px;
+    text-align: center;
+    color: #FF652F; }
+  #menu-image p {
+    text-align: justify; }
+
+#menu-items {
+  padding: 0 20px;
+  border-top: 10px solid #5F817A; }
+  #menu-items h2, #menu-items h3, #menu-items h4, #menu-items h5, #menu-items h6 {
+    color: #FF652F; }
+  #menu-items h2 {
+    padding-top: 40px; }
+  #menu-items h5 {
+    float: left; }
+  #menu-items h6 {
+    float: right;
+    font-size: 20px; }
+  #menu-items p {
+    clear: both;
+    color: #333; }
 
 .btn-lg {
   background-color: #FF652F;
