@@ -1,4 +1,4 @@
-(function ($) {
+$(document).ready(function ($) {
     'use strict';
     $('li').on("click", function () {
         $(this).next().slideToggle(400);
