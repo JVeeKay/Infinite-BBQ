@@ -9,7 +9,7 @@ body {
 
 .bg-light {
   background-color: #FAFAF4;
-  padding-top: 150px; }
+  padding-top: 120px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "BioRhyme", serif; }
@@ -47,25 +47,27 @@ footer {
     padding: 20px 0; }
 
 header .logo {
-  width: 185px;
+  width: 200px;
   background: rgba(0, 0, 0, 0.1); }
 
 /*Hero Section */
 #hero {
   padding: 0;
-  max-height: 600px; }
-
-.carousel-inner {
-  width: 100%;
-  height: auto; }
-
-.carousel-item > img {
-  max-height: 600px;
-  background-size: cover; }
-
-.button {
-  position: relative;
-  bottom: 125px; }
+  max-height: 100vh; }
+  #hero .jumbotron {
+    background-image: url("../assets/brisket.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding-top: 250px; }
+    #hero .jumbotron h1 {
+      padding-bottom: 50px;
+      font-size: 4.3em;
+      font-family: "Caveat", cursive;
+      color: #FAFAF4;
+      text-shadow: 5px 5px 7px black; }
+    #hero .jumbotron a {
+      margin-bottom: 25px; }
 
 #info-bar {
   background-color: #5F817A;
@@ -150,16 +152,21 @@ header .logo {
     display: none;
     background-color: #FAFAF4;
     padding: 5% 15% 5%; }
-    #body-panels .panel h2 {
+    #body-panels .panel h2, #body-panels .panel h3, #body-panels .panel h4, #body-panels .panel h5, #body-panels .panel h6 {
       color: #FF652F;
-      text-shadow: 1px 1px 2px #777; }
+      margin-bottom: 10px; }
+    #body-panels .panel h4 {
+      padding: 20px 0 25px 0; }
+    #body-panels .panel h6 {
+      margin-top: 10px; }
     #body-panels .panel p {
       color: #333;
       margin-bottom: 0;
-      padding-top: 30px;
-      font-size: 26px; }
+      padding-bottom: 20px;
+      font-size: 26px;
+      line-height: 1.2em; }
     #body-panels .panel img {
-      padding-top: 10px;
+      padding: 10px 0 30px 0;
       max-width: 275px;
       height: auto; }
     #body-panels .panel a {
@@ -184,7 +191,7 @@ header .logo {
     color: #FAFAF4;
     text-shadow: 1px 1px 2px #555; }
   #locations .card {
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     width: 18rem; }
   #locations .card-body {
     background-color: #FF8055; }
@@ -192,29 +199,53 @@ header .logo {
 #menu-image {
   padding: 0 20px; }
   #menu-image img {
-    max-width: 100%;
-    height: auto;
-    padding: 80px 10px 50px; }
+    width: 400px;
+    height: 400px; }
+    @media (min-width: 300px) and (max-width: 500px) {
+      #menu-image img {
+        width: 280px;
+        height: 280px; } }
+  #menu-image #slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    padding: 80px 10px 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
+    @media (min-width: 300px) and (max-width: 500px) {
+      #menu-image #slideshow {
+        width: 280px;
+        height: 280px; } }
+  #menu-image #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px; }
   #menu-image h3 {
     padding-top: 80px;
     text-align: center;
     color: #FF652F; }
+    @media (min-width: 300px) and (max-width: 500px) {
+      #menu-image h3 {
+        padding-top: 20px; } }
   #menu-image p {
     text-align: justify; }
 
 #menu-items {
-  padding: 0 20px;
+  padding: 0 10px 50px;
   border-top: 10px solid #5F817A; }
   #menu-items h2, #menu-items h3, #menu-items h4, #menu-items h5, #menu-items h6 {
     color: #FF652F; }
   #menu-items h2 {
     padding-top: 40px; }
   #menu-items p {
-    color: #333; }
+    color: #333;
+    line-height: 1.2em; }
   #menu-items .flex {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: flex-start; }
   #menu-items .flex-wrap {
     flex-wrap: wrap; }
 

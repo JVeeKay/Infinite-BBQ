@@ -2,21 +2,24 @@
 
 #hero
   padding: 0
-  max-height: 600px
+  max-height: 100vh
 
-.carousel-inner
-  width: 100%
-  height: auto
+  .jumbotron
+    background-image: url('../assets/brisket.jpg')
+    background-position: center
+    background-size: cover
+    margin: 0
+    padding-top: 250px
 
-.carousel-item > img
-  max-height: 600px
-  //background-position: center
-  background-size: cover
+    h1
+      padding-bottom: 50px
+      font-size: 4.3em
+      font-family: $font-stack-second
+      color: $text-almond
+      text-shadow: 5px 5px 7px black
 
-
-.button
-  position: relative
-  bottom: 125px
+    a
+      margin-bottom: 25px
 
 
 // Info-Bar Section
@@ -122,17 +125,23 @@
     display: none
     background-color: $text-almond
     padding: 5% 15% 5%
-    h2
+    h2,h3,h4,h5,h6
       color: #FF652F
-      text-shadow: 1px 1px 2px #777
+      //text-shadow: 1px 1px 2px #777
+      margin-bottom: 10px
+    h4
+      padding: 20px 0 25px 0
+    h6
+      margin-top: 10px
     p
       color: #333
       margin-bottom: 0
-      padding-top: 30px
+      padding-bottom: 20px
       font-size: 26px
+      line-height: 1.2em
 
     img
-      padding-top: 10px
+      padding: 10px 0 30px 0
       max-width: 275px
       height: auto
 
@@ -162,7 +171,7 @@
 
 
   .card
-    margin-bottom: 10px
+    margin: 0 auto 10px
     width: 18rem
   .card-body
     background-color: #FF8055
@@ -174,14 +183,36 @@
 #menu-image
   padding: 0 20px
   img
-    max-width: 100%
-    height: auto
+    width: 400px
+    height: 400px
+    @media (min-width: 300px) and (max-width: 500px)
+      width: 280px
+      height: 280px
+
+  #slideshow
+    margin: 50px auto
+    position: relative
+    width: 400px
+    height: 400px
     padding: 80px 10px 50px
+    box-shadow: 0 0 20px rgba(0,0,0,0.4)
+    @media (min-width: 300px) and (max-width: 500px)
+      width: 280px
+      height: 280px
+
+  #slideshow > div
+    position: absolute
+    top: 10px
+    left: 10px
+    right: 10px
+    bottom: 10px
 
   h3
     padding-top: 80px
     text-align: center
     color: #FF652F
+    @media (min-width: 300px) and (max-width: 500px)
+      padding-top: 20px
 
   p
     text-align: justify
@@ -189,25 +220,22 @@
   //Menu Main Section
 
 #menu-items
-  padding: 0 20px
+  padding: 0 10px 50px
   border-top: 10px solid $brand-sage
   h2,h3,h4,h5,h6
     color: #FF652F
     //text-shadow: 1px 1px 2px #777
   h2
     padding-top: 40px
-  //h5
-    float: left
-  //h6
-    float: right
-    font-size: 20px
+
   p
     color: #333
+    line-height: 1.2em
 
   .flex
     display: flex
     justify-content: space-between
-    align-items: center
+    align-items: flex-start
 
   .flex-wrap
     flex-wrap: wrap
