@@ -4,8 +4,12 @@ html {
 
 body {
   margin: 0;
-  padding: 95px 0 0;
+  padding: 50px 0 0;
+  height: auto;
   background-color: #222; }
+
+html, body {
+  overflow-x: hidden; }
 
 .bg-light {
   background-color: #FAFAF4;
@@ -24,10 +28,12 @@ footer {
   border-top: 10px solid #FF652F;
   padding-top: 30px; }
   footer h3, footer h5, footer p, footer a {
-    color: #FAFAF4;
     text-shadow: 2px 2px 2px black; }
   footer p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #FAFAF4; }
+  footer h3, footer h5 {
+    color: #FF652F; }
   footer h5 {
     text-align: center; }
   footer a {
@@ -49,6 +55,9 @@ footer {
 header .logo {
   width: 200px;
   background: rgba(0, 0, 0, 0.1); }
+  @media (min-width: 300px) and (max-width: 500px) {
+    header .logo {
+      width: 150px; } }
 
 /*Hero Section */
 #hero {
@@ -65,7 +74,10 @@ header .logo {
       font-size: 4.3em;
       font-family: "Caveat", cursive;
       color: #FAFAF4;
-      text-shadow: 5px 5px 7px black; }
+      text-shadow: 5px 5px 5px black; }
+      @media (min-width: 300px) and (max-width: 500px) {
+        #hero .jumbotron h1 {
+          font-size: 2.5em; } }
     #hero .jumbotron a {
       margin-bottom: 25px; }
 
@@ -83,7 +95,7 @@ header .logo {
   #info-bar .phone {
     color: #FAFAF4;
     text-shadow: 1px 1px 1px black;
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.04em; }
 
 #body-panels {
@@ -140,7 +152,7 @@ header .logo {
   #body-panels h1 {
     text-align: center;
     font-size: 3.6rem;
-    padding-top: 50px;
+    padding-top: 60px;
     color: #FAFAF4;
     letter-spacing: 0.1em;
     margin-bottom: 0; }
@@ -152,6 +164,9 @@ header .logo {
     display: none;
     background-color: #FAFAF4;
     padding: 5% 15% 5%; }
+    @media (min-width: 300px) and (max-width: 500px) {
+      #body-panels .panel {
+        padding: 10% 7% 10%; } }
     #body-panels .panel h2, #body-panels .panel h3, #body-panels .panel h4, #body-panels .panel h5, #body-panels .panel h6 {
       color: #FF652F;
       margin-bottom: 10px; }
@@ -203,8 +218,8 @@ header .logo {
     height: 400px; }
     @media (min-width: 300px) and (max-width: 500px) {
       #menu-image img {
-        width: 280px;
-        height: 280px; } }
+        width: 240px;
+        height: 240px; } }
   #menu-image #slideshow {
     margin: 50px auto;
     position: relative;
@@ -214,8 +229,8 @@ header .logo {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
     @media (min-width: 300px) and (max-width: 500px) {
       #menu-image #slideshow {
-        width: 280px;
-        height: 280px; } }
+        width: 240px;
+        height: 240px; } }
   #menu-image #slideshow > div {
     position: absolute;
     top: 10px;
@@ -233,7 +248,7 @@ header .logo {
     text-align: justify; }
 
 #menu-items {
-  padding: 0 10px 50px;
+  padding: 0 auto 50px;
   border-top: 10px solid #5F817A; }
   #menu-items h2, #menu-items h3, #menu-items h4, #menu-items h5, #menu-items h6 {
     color: #FF652F; }
@@ -281,8 +296,5 @@ nav {
     background: #FAFAF4; }
   nav .navbar-toggler-icon {
     background-color: #FAFAF4; }
-
-nav.navbar {
-  padding: 15px; }
 
 /*# sourceMappingURL=app.css.map */
