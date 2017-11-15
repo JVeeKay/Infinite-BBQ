@@ -62,7 +62,7 @@ header .logo {
 /*Hero Section */
 #hero {
   padding: 0;
-  max-height: 100vh; }
+  height: auto; }
   #hero .jumbotron {
     background-image: url("../assets/brisket.jpg");
     background-position: center;
@@ -109,8 +109,7 @@ header .logo {
     list-style: none; }
   #body-panels .box:first-of-type {
     background-image: url("../assets/thumbnail_PEACH HABANERO.jpg");
-    background-position: center;
-    background-size: cover; }
+    background-position: center; }
   #body-panels .box:nth-of-type(2) {
     background-image: url("../assets/thumbnail_pattern4.jpg");
     background-position: left; }
@@ -119,8 +118,7 @@ header .logo {
     background-position: right; }
   #body-panels .box:last-of-type {
     background-image: url("../assets/thumbnail_MARINADE.jpg");
-    background-position: center;
-    background-size: cover; }
+    background-position: center; }
   #body-panels .overlay.yellow {
     position: relative;
     top: 0;
