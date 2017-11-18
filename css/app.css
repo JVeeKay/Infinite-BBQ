@@ -226,17 +226,19 @@ header .logo {
     width: 400px;
     height: 400px;
     padding: 80px 10px 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777; }
     @media (min-width: 300px) and (max-width: 500px) {
       #menu-image #slideshow {
         width: 240px;
         height: 240px; } }
   #menu-image #slideshow > div {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px; }
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; }
   #menu-image h3 {
     padding-top: 80px;
     text-align: center;
@@ -263,6 +265,61 @@ header .logo {
     align-items: flex-start; }
   #menu-items .flex-wrap {
     flex-wrap: wrap; }
+
+#products {
+  padding-top: 30px; }
+  @media (min-width: 300px) and (max-width: 500px) {
+    #products {
+      padding: 50px 7% 50px; } }
+  #products h2 {
+    padding-bottom: 20px; }
+  #products h2, #products h5, #products h6 {
+    color: #FF652F; }
+  #products h5 {
+    padding-top: 15px; }
+  #products img {
+    width: 18rem;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    display: block; }
+  #products .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  #products .row-space {
+    padding: 0 0 40px; }
+
+#order-contact {
+  background-image: url("../assets/thumbnail_Autumn Wood_9.jpg");
+  padding: 50px 0;
+  color: #FAFAF4;
+  text-shadow: 4px 2px 5px black;
+  border-top: 10px solid #FF652F; }
+  #order-contact form {
+    width: 50%;
+    margin: 20px auto 10px; }
+    @media (min-width: 300px) and (max-width: 500px) {
+      #order-contact form {
+        width: 90%; } }
+  #order-contact h5 {
+    padding-bottom: 15px; }
+  #order-contact .info-group {
+    width: 100%; }
+  #order-contact label {
+    width: 100%;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px; }
+  #order-contact input {
+    width: 100%; }
+  #order-contact textarea {
+    width: 100%;
+    height: 10em;
+    display: block; }
+  #order-contact span {
+    display: block; }
 
 .btn-lg {
   background-color: #FF652F;
