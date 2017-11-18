@@ -263,7 +263,6 @@
     padding-top: 15px
   img
     width: 18rem
-
     -webkit-box-shadow: 0 10px 6px -6px #777
     -moz-box-shadow: 0 10px 6px -6px #777
     box-shadow: 0 10px 6px -6px #777
@@ -300,11 +299,17 @@
 
   input
     width: 100%
+    outline: none
+    &:focus
+      border: 2px solid #555
 
   textarea
     width: 100%
     height: 10em
     display: block
+    outline: none
+    &:focus
+      border: 2px solid #555
 
   span
     display: block
